@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <style>
+        .weather-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.weather-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h3 {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.weather-card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background: lightblue;
+            text-align: center;
+        }
+
+        .weather-app {
+            background: white;
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: #2196f3;
+        }
+
+        input {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 12px 18px;
+            background: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .weather-box {
+            margin-top: 25px;
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <h1>🌤️ Weather App</h1>
+
+        <input id="city" type="text" placeholder="Enter City">
+
+        <button onclick="searchWeather()">Search</button>
+
+        <div class="weather-box">
+            <h2 id="cityName">Karachi</h2>
+          <div class="weather-info">
+
+    <div class="weather-card">
+        <h3>🌡️ Temperature</h3>
+        <p id="temperature">30°C</p>
+    </div>
+
+    <div class="weather-card">
+        <h3>☁️ Condition</h3>
+        <p id="condition">☀️ Sunny</p>
+    </div>
+
+    <div class="weather-card">
+        <h3>💧 Humidity</h3>
+        <p id="humidity">Humidity: 60%</p>
+    </div>
+
+    <div class="weather-card">
+        <h3>💨 Wind</h3>
+        <p id="wind">Wind: 12 km/h</p>
+    </div>
+
+</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
